@@ -14,9 +14,8 @@ stream.filter(n -> n % 2 == 0)
 `2	4`
 
 ---
-```
+```java
 // 원본 데이터에 영향을 주지 않음
-System.out.println();
 for (int n : array) {
   System.out.print(n + "\t");
 }
@@ -25,8 +24,7 @@ for (int n : array) {
 `1	2	3	4	5`
 
 ---
-```		
-System.out.println();
+```java
 // 배열 기반 스트림 생성
 Arrays.stream(array)
   .filter(n -> n % 2 != 0)	// 홀수만 필터링
