@@ -29,4 +29,3 @@
 버튼이 눌리지 않았을 땐 `@android:drawable/ic_lock_silent_mode_off` 이미지를 보여준다.
 
 ![image](https://user-images.githubusercontent.com/95271528/154806009-1a67f49e-12f4-4928-b209-8bb982bd9773.png) ![image](https://user-images.githubusercontent.com/95271528/154806042-48a656ca-9e49-4b2f-a0fd-d27f9c96bc0f.png)
-
