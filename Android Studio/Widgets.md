@@ -124,3 +124,12 @@ toggle1 = (ToggleButton)findViewById(R.id.toggleButton1);
 ```
 
 ![image](https://user-images.githubusercontent.com/95271528/154979618-c30e78d0-3f1e-440f-ac94-a4d2ed75f54a.png)
+
+---
+reference
+
+[체크박스  |  Android 개발자  |  Android Developers](https://developer.android.com/guide/topics/ui/controls/checkbox?hl=ko)
+
+[라디오 버튼  |  Android 개발자  | Android Developers](https://developer.android.com/guide/topics/ui/controls/radiobutton?hl=ko)
+
+[전환 버튼  |  Android 개발자  | Android Developers](https://developer.android.com/guide/topics/ui/controls/togglebutton?hl=ko)
