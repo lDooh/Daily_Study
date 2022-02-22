@@ -125,6 +125,57 @@ toggle1 = (ToggleButton)findViewById(R.id.toggleButton1);
 
 ![image](https://user-images.githubusercontent.com/95271528/154979618-c30e78d0-3f1e-440f-ac94-a4d2ed75f54a.png)
 
+## 스피너
+
++ 값 집합에서 하나를 선택할 수 있도록 해준다.
+
+```xml
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+```
+
++ `string.xml`(문자열 리소스) 파일에 문자열 배열을 정의한다.
+
+```xml
+    <string-array name="spinner_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+```
+
+```java
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.spinner_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                Toast.makeText(getApplicationContext(), getResources().getStringArray(R.array.spinner_array)[pos] + " 선택함", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+            }
+        });
+```
+
+![image](https://user-images.githubusercontent.com/95271528/155155400-9e857bcc-7bb8-49ae-ab6f-c2c13c592f24.png) ![image](https://user-images.githubusercontent.com/95271528/155155433-970f1b4c-2c63-4f17-995a-e6df99af8ecd.png)
+
+![image](https://user-images.githubusercontent.com/95271528/155170879-4bf93b76-ce2e-4ce3-b72e-64df736fd3b6.png)
+
+
+
 ---
 reference
 
@@ -133,3 +184,5 @@ reference
 [라디오 버튼  |  Android 개발자  | Android Developers](https://developer.android.com/guide/topics/ui/controls/radiobutton?hl=ko)
 
 [전환 버튼  |  Android 개발자  | Android Developers](https://developer.android.com/guide/topics/ui/controls/togglebutton?hl=ko)
+
+[스피너  |  Android 개발자  | Android Developers](https://developer.android.com/guide/topics/ui/controls/spinner?hl=ko)
