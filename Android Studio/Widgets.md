@@ -174,6 +174,18 @@ toggle1 = (ToggleButton)findViewById(R.id.toggleButton1);
 
 ![image](https://user-images.githubusercontent.com/95271528/155170879-4bf93b76-ce2e-4ce3-b72e-64df736fd3b6.png)
 
+## 도움말
+
++ 버튼을 누르고 있으면 도움말을 출력
+
+```xml
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tooltipText="도움말 텍스트" />
+```
+
+![image](https://user-images.githubusercontent.com/95271528/155547477-9f301255-86a9-4d1a-8f07-94ab3d64074a.png)
 
 
 ---
