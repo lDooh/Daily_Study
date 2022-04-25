@@ -56,3 +56,9 @@ desc [tablename];
 ```
 
 ![image](https://user-images.githubusercontent.com/95271528/151567099-1234f4c2-e5f6-4697-9b9a-ec752b53f90c.png)
+
+### alter table
++ not null 조건 추가
+```cmd
+alter table [tablename] modify column name varchar(10) not null;
+```
